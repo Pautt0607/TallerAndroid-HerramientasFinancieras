@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CRÉDITO"
+            android:textColor="@color/teal_500"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Calcula tu cuota"
+            android:textColor="@color/text_primary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ingresa los datos del crédito y obtén una estimación completa."
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Valor del crédito"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/loanAmountInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input"
+            android:hint="Ej. 5000000"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Número de cuotas mensuales"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/monthsInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input"
+            android:hint="Ej. 12"
+            android:inputType="number"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Interés mensual (%)"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/rateInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input"
+            android:hint="Ej. 1.5"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary" />
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_secondary_button"
+            android:text="Calcular crédito"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/creditResultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_result"
+            android:lineSpacingExtra="4dp"
+            android:text="Los resultados aparecerán aquí"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>
