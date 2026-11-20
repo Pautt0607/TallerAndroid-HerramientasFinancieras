@@ -6,4 +6,4 @@ Aplicación desarrollada en Java con Android Studio.
 - Calculadora de crédito con cuota mensual fija, total a pagar e intereses.
 - Navegación entre pantallas y validación de datos.
 
-El código está en `app/src/main`. El video explicativo y su guion se encuentran en `demostracion`.
+El código está en `app/src/main`.
